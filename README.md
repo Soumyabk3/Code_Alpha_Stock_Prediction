@@ -1,7 +1,7 @@
 # Code_Alpha_Stock_Prediction
 Batch:  July: Data Science : M1
 
-![Stock Prediction using LSTM]()
+![Stock Prediction using LSTM](https://github.com/Soumyabk3/Code_Alpha_Stock_Prediction/blob/main/Stock%20Prediction.png)
 
 ## Problem Statement
 
@@ -10,46 +10,40 @@ Build a machine learning model to forecast future product sales based on factors
 
 ## Introduction
 
-The study was effective in developing a linear regression model that can forecast future product sales based on television, radio, and print  advertising. The model's performance measures show that it is a reliable tool for projecting sales, with television advertising being the most influential component. 
-
-Businesses can use these insights to better manage their advertising spending, prioritising the channels that generate the most sales.
+This project utilizes Long Short-Term Memory (LSTM) networks to predict stock prices based on historical data. It involves preprocessing data, training an LSTM model, and visualizing the results.
 
 ## Dependencies
 
 To run this project, you need to install the following Python libraries:
 
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
+- numPy
+- pandas
+- matplotlib
+- seaborn
 - scikit-learn
 - IPython
-- Plotly
+- plotly
 - Warnings
-- joblit 
+- keras
+- yfinance
+- pandas_datareader
 
 ## Tools and techniques
 - Language: Python
 
-- Algorithm: Linear Regression
+- Algorithm: LSTM
 
 - Integrated Development Environment : Jupyter Notebook
+- 
 ## Installation
 
-To install the specified packages (numpy, pandas, matplotlib, seaborn, scikit-learn, and ipython) and generate a requirements.txt file, follow these steps:
+To install the specified packages (numpy, pandas, matplotlib, seaborn, scikit-learn, and ipython), etc, follow these steps:
 
 
 1. *Installing Dependencies*:
 
 ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn ipython plotly 
-
-```
-and 
-
-```bash
-
-pip install joblib
+  pip install pandas numpy matplotlib seaborn scikit-learn keras yfinance pandas-datareader plotly
 
 ```
  
@@ -59,12 +53,7 @@ pip install joblib
 pip list
 
 ```
-or
 
-```bash
-   pip show numpy pandas matplotlib seaborn scikit-learn ipython plotly
-
-```
 
 3. * you can use the pip freeze command to get a list of all installed packages along with their versions*:
 
@@ -80,57 +69,33 @@ numpy==1.22.4
 pandas==1.4.2
 scikit-learn==1.1.1
 seaborn==0.11.2
-joblib==1.1.0
 ```
-
-## Load the data set from Kaggle website:
-
-```bash
-https://www.kaggle.com/code/ashydv/sales-prediction-simple-linear-regression/input
-
-```
-
-
-
-
 
 ## Summary
-- Here we loaded Dependencies
 
-- Data Collection: Data Loading the dataset from a CSV file
+- Data Collection:
 
-- Data Cleaning
+Obtain historical stock price data from a reliable source such as Yahoo Finance.
+Modify the data fetching code in the provided notebooks (stock_prediction.ipynb) to retrieve stock data.
 
-- Data Analysis
+- Data Preprocessing:
 
-- Data Visualization
+Clean and preprocess the data to handle missing values and format it for LSTM input.
+- LSTM Model Training:
 
-- Feature Endgineering
+Train an LSTM model using the preprocessed historical stock price data.
+Configure the LSTM architecture with appropriate input shape, number of layers, and neurons per layer.
+- Prediction and Evaluation:
 
-- Model Building:
-    The predictive model is built using scikit-learn:
-    Splitting the data into training and testing sets.
-    Normalizing numerical features using StandardScaler.
-    Implementing a Linear Regression model.
+Use the trained LSTM model to make predictions on test data.
+Evaluate the model's performance using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and visual inspection of predicted vs. actual prices.
+- Visualization:
 
-- Model Training:
-    Train the linear regression model
-
-- Model Evaluation:
-    The model's performance is evaluated using metrics such as:
-    Mean Squared Error (MSE)
-    Mean Absolute Error (MAE)
-    R-squared (R²)
-
-- Visualization of the Model Fit
-
-- Feature Importance
-
-- Prediction - Using the trained models to predict sales for new advertising spend inputs
+Visualize the historical stock prices, predicted prices, and evaluation metrics using matplotlib, seaborn, and plotly.
 
 ## Conclusion
-The project successfully demonstrates the steps involved in building a machine learning model for predicting sales . The thorough data cleaning, feature engineering, and visualization ensure a robust analysis, leading to more accurate predictions We developed and tested a linear regression model in Python using tools such as NumPy, Pandas, and Scikit-learn. Joblib allowed for seamless model deployment. Moving forward, refining models with improved approaches promises to improve forecast accuracy, allowing organisations to optimise strategy and drive growth by making educated decisions.
-
+In this project, we successfully applied Long Short-Term Memory (LSTM) neural networks to predict stock prices based on historical data. 
+In a nutshell, this project showcases the application of LSTM neural networks for stock price prediction, highlighting their capability to handle time series data and learn complex dependencies over extended periods. The insights gained contribute to the field of financial forecasting, offering a foundation for future enhancements and applications in predictive analytics.
 ## Authors
 
 - [@Soumyabk3](https://github.com/Soumyabk3)
