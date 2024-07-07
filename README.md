@@ -34,7 +34,7 @@ To run this project, you need to install the following Python libraries:
 - Algorithm: LSTM
 
 - Integrated Development Environment : Jupyter Notebook
-- 
+
 ## Installation
 
 To install the specified packages (numpy, pandas, matplotlib, seaborn, scikit-learn, and ipython), etc, follow these steps:
