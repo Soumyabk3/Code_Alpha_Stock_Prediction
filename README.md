@@ -55,7 +55,7 @@ pip list
 ```
 
 
-3. * you can use the pip freeze command to get a list of all installed packages along with their versions*:
+3. you can use the pip freeze command to get a list of all installed packages along with their versions:
 
 ```bash
 pip freeze
